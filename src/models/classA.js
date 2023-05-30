@@ -1,3 +1,4 @@
+//clase usuario
 export class Usuario{
     nombre = "";
     apellido = "";
