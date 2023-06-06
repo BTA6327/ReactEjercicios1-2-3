@@ -9,6 +9,9 @@ import Ejemplo2 from './hooks/Ejemplo2';
 import Ejemplo3 from './hooks/Ejemplo3'
 import MiComponenteConContexto from './hooks/Ejemplo3';
 import Ejemplo4 from './hooks/Ejemplo4'
+import Greetingstyled from './components/pure/forms/greetingStyled';
+import Clock from './hooks/lifecycle/Clock';
+import ClockFuncional from './hooks/lifecycle/ClockFuncional';
 function App() {
   return (
     <div className="App">
@@ -28,6 +31,9 @@ function App() {
           { Todo lo que hay aqui es tratado como el props.children en cualquier componente}
           <h3>Contenido del props.children</h3>
          </Ejemplo4> */}
+         {/*<Greetingstyled name="Byron"></Greetingstyled>*/}
+         {/*<Clock></Clock>*/}
+         {<ClockFuncional></ClockFuncional>}
          
       </header>
     </div>

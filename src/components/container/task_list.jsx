@@ -5,17 +5,15 @@ import TaskComponent from '../pure/task';
 
 // Importamos la hoja de estilos de task.scss
 import '../../styles/task.scss';
-import Taskform from '../pure/forms/taskForm';
+//import Taskform from '../pure/forms/taskForm';
 
 
 const TaskListComponent = () => {
-    const defaultTask1 = new Task('Example1', 'Description1', true, LEVELS.NORMAL);
-    const defaultTask2 = new Task('Example2', 'Description 2', false, LEVELS.URGENT);
-    const defaultTask3 = new Task('Example3', 'Description 3', false, LEVELS.BLOCKING);
+    const defaultTask = new Task('Example1', 'Description1', true, LEVELS.NORMAL);
 
 
     // Estado del componente
-    const [tasks, setTasks] = useState([defaultTask1, defaultTask2, defaultTask3]);
+    const [tasks, setTasks] = useState([defaultTask]);
     const [loading, setLoading] = useState(true);
 
     // Control del ciclo de vida del componente
@@ -38,7 +36,7 @@ const TaskListComponent = () => {
                 <h1>Your Tasks:</h1>
             </div>
             {/* Aplicar un for/map para renderizar unna lista*/}
-            <TaskComponent task={defaultTask1}></TaskComponent>
+            <TaskComponent task={defaultTask}></TaskComponent>
         </div>
     );
 };

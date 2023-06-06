@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 
+// Importamos la hoja de estilos de task.scss
+import '../../styles/task.scss';
 
 const TaskComponent = ({task}) => {
     useEffect(() => {
@@ -12,7 +14,7 @@ const TaskComponent = ({task}) => {
 
     return (
         <div>
-            <h2>
+            <h2 className='task-name'>
                 Nombre: {task.name}
             </h2>
             <h3>
