@@ -12,11 +12,12 @@ import Ejemplo4 from './hooks/Ejemplo4'
 import Greetingstyled from './components/pure/forms/greetingStyled';
 import Clock from './hooks/lifecycle/Clock';
 import ClockFuncional from './hooks/lifecycle/ClockFuncional';
+import Father from './components/container/father';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+       {/*<header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />*/}
         {/* Componente propio greeting.jsx*/}
         {/*<Greeting name="Byron"></Greeting>*/}
          {/* Componente ejemplo funcion greeting.jsx*/}
@@ -33,9 +34,11 @@ function App() {
          </Ejemplo4> */}
          {/*<Greetingstyled name="Byron"></Greetingstyled>*/}
          {/*<Clock></Clock>*/}
-         {<ClockFuncional></ClockFuncional>}
+         {/*<ClockFuncional></ClockFuncional>*/}
          
-      </header>
+      {/*</header>*/}
+      {/*{<TaskListComponent></TaskListComponent>}*/}
+      <Father></Father>
     </div>
   );
 }
